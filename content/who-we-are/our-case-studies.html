@@ -1,0 +1,299 @@
+---
+title: "Our Team"
+date: 2020-06-26T16:30:51+05:30
+draft: false
+type : "inner"
+---
+<div class="breadcrumbDiv">
+    <div class="container">
+        <div class="innerContainer">
+
+
+
+            <ol class="breadcrumb">
+                <li class="">
+                    <a href="/who-we-are">Who We Are</a>
+                </li>
+
+                <li class="active">
+                    <a href="/who-we-are/our-case-studies">Our Case Studies</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+</div>
+<div class="FullImage">
+    <h1 class="page-title">Who We Are.</h1>
+    <img src="/img/huonit_whoweare_500.jpg" alt="">
+</div>
+<div class="container">
+    <div class="innerContainer">
+        <div class="mill_tech_firm">
+            <h2>We’re not just your run-of-the-mill tech firm.</h2>
+            <p>We’re a multi-disciplined team of IT experts, serious about discovering and delivering<br>
+                ways to make our clients business’ more successful. <br>
+                And we like to have fun along the way.</p>
+        </div>
+    </div>
+</div>
+<div class="OurStorySubMenuDiv" id="service-description">
+    <div class="container">
+        <div class="innerContainer">
+            <div class="OurStorySubMenu">
+                <ul class="FlexSubMenu">
+                    <li class="who-we-submenu"><a
+                            href="/who-we-are/our-story#service-description">our story<i
+                                class="icon-chevron-down" aria-hidden="true"></i></a></li>
+                    <li class="who-we-submenu"><a
+                            href="/who-we-are/our-clients#service-description">our clients<i
+                                class="icon-chevron-down" aria-hidden="true"></i></a></li>
+                    <li class="who-we-submenu"><a
+                            href="/who-we-are/our-partners#service-description">our partners<i
+                                class="icon-chevron-down" aria-hidden="true"></i></a></li>
+                    <li class="who-we-submenu"><a
+                            href="/who-we-are/our-case-studies#service-description">our case
+                            studies<i class="icon-chevron-down" aria-hidden="true"></i></a></li>
+                    <li class="who-we-submenu"><a
+                            href="/who-we-are/our-team#service-description">our team<i
+                                class="icon-chevron-down" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var url = window.location.href;
+    $('.who-we-submenu').each(function () {
+        var linkValue = $(this).children().attr('href');
+        if (url == linkValue) {
+            $(this).addClass('active');
+        }
+    });
+    $(window).ready(function () {
+        if (window.location.hash) {
+            $('html, body').animate({
+                scrollTop: ($('#service-description').offset().top - $('#layout-nav').height())
+            }, 400);
+        }
+    });
+</script>
+<div class="welcome-video clear-fix">
+    <div class="container">
+        <div class="innerContainer text-center">
+            <h2>Our Case Studies</h2>
+        </div>
+    </div>
+</div>
+<div class=" clear-fix">
+    <div class="container">
+        <div class="innerContainer">
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <select class="services_option form-control largeSelectMenu" id="services_option"
+                        onchange="chooseData('services_option')">
+                        <option value="">ALL SERVICES</option>
+                        <option value="0">24x7 Help Desk</option>
+                        <option value="1">Ad Hoc, Block Hours &amp; Onsite Support</option>
+                        <option value="2">Business Continuity Planning</option>
+                        <option value="3">CIO as a Service</option>
+                        <option value="4">Cloud</option>
+                        <option value="5">Disaster Recovery as a service</option>
+                        <option value="6">Fixed Price IT Management</option>
+                        <option value="7">IT Health Checks</option>
+                        <option value="8">IT Project Implementation</option>
+                        <option value="9">IT Project Management</option>
+                        <option value="10">IT Systems Design</option>
+                        <option value="11">IT for Mergers, Acquisitions &amp; Divestments</option>
+                        <option value="12">Preventative IT Maintenance</option>
+                        <option value="13">Proactive Monitoring</option>
+                        <option value="14">Secure Networking</option>
+                    </select>
+                </div>
+                <div class="col-md-6 form-group">
+                    <select class="industry_option form-control largeSelectMenu" id="industry_option"
+                        onchange="chooseData('industry_option')">
+                        <option value="">ALL INDUSTRY</option>
+                        <option value="0">Aged Care</option>
+                        <option value="1">Architecture</option>
+                        <option value="2">Automotive</option>
+                        <option value="3">Construction</option>
+                        <option value="4">Financial Services</option>
+                        <option value="5">Legal</option>
+                        <option value="6">Not-For-Profit</option>
+                        <option value="7">Publishing</option>
+                    </select>
+                </div>
+            </div>
+            <div class="CaseStudyLogosListing">
+                <div
+                    class="casestudyloop  it-project-management it-project-implementation business-continuity-planning cio-as-a-service it-health-checks automotive">
+                    <a href="/case-study/pm-automotive-group">
+                        <img title="Customer Story: PM Automotive Group" alt="Customer Story: PM Automotive Group"
+                            src="/img/huon_clients_750x550px_pmauto_old.jpg"
+                            class="img-responsive">
+                    </a>
+                </div>
+                <div
+                    class="casestudyloop  24x7-help-desk cio-as-a-service fixed-price-it-management proactive-monitoring architecture construction">
+                    <a href="/case-study/nbrs-+-partners">
+                        <img title="Customer Story: NBRS+Partners" alt="Customer Story: NBRS+Partners"
+                            src="/img/huon_clients_750x550px_0000_NBRS.jpg"
+                            class="img-responsive">
+                    </a>
+                </div>
+                <div
+                    class="casestudyloop  24x7-help-desk it-project-management it-project-implementation ad-hoc-block-hours-onsite-support business-continuity-planning cio-as-a-service proactive-monitoring it-systems-design secure-networking financial-services">
+                    <a href="/case-study/blg-business-advisers">
+                        <img title="Customer Story: BLG Business Advisers" alt="Customer Story: BLG Business Advisers"
+                            src="/img/huon_clients_750x550px-blgv3.jpg"
+                            class="img-responsive">
+                    </a>
+                </div>
+                <div class="casestudyloop  24x7-help-desk it-health-checks proactive-monitoring aged-care">
+                    <a href="/case-study/mclean-care">
+                        <img title="Customer Story: McLean Care" alt="Customer Story: McLean Care"
+                            src="/img/huon_clients_750x550px-mcleanv2.jpg"
+                            class="img-responsive">
+                    </a>
+                </div>
+                <div class="casestudyloop  it-project-management not-for-profit">
+                    <a href="/case-study/royal-rehab">
+                        <img title="Customer Story: Royal Rehab" alt="Customer Story: Royal Rehab"
+                            src="/img/huon_clients_750x550px-royalrehabv2.jpg"
+                            class="img-responsive">
+                    </a>
+                </div>
+                <div class="casestudyloop  not-for-profit">
+                    <a href="/case-study/access-sydney-community-transport">
+                        <img title="Customer Story: Access Sydney Community Transport"
+                            alt="Customer Story: Access Sydney Community Transport"
+                            src="/img/AccessSydney-RGB.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div
+                    class="casestudyloop  it-project-management it-project-implementation fixed-price-it-management it-health-checks it-systems-design legal">
+                    <a href="/case-study/watkins-tapsell-solicitors">
+                        <img title="Customer Story: Watkins Tapsell Solicitors"
+                            alt="Customer Story: Watkins Tapsell Solicitors"
+                            src="/img/huon_clients_750x550px_0008_Watkins.jpg"
+                            class="img-responsive">
+                    </a>
+                </div>
+                <div
+                    class="casestudyloop  disaster-recovery-as-a-service it-project-management it-project-implementation cio-as-a-service it-for-mergers-acquisitions-divestments it-systems-design financial-services">
+                    <a href="/case-study/customer-story-duet-group">
+                        <img title="Customer Story: DUET Group" alt="Customer Story: DUET Group"
+                            src="/img/huon_clients_750x550px_0003_Duet.jpg"
+                            class="img-responsive">
+                    </a>
+                </div>
+                <div
+                    class="casestudyloop  24x7-help-desk preventative-it-maintenance it-project-management it-project-implementation ad-hoc-block-hours-onsite-support it-health-checks it-systems-design publishing">
+                    <a href="/case-study/customer-story-intermedia-group">
+                        <img title="Customer Story: The Intermedia Group" alt="Customer Story: The Intermedia Group"
+                            src="/img/huon_clients_750x550px-intermeidav2.jpg"
+                            class="img-responsive">
+                    </a>
+                </div>
+                <div
+                    class="casestudyloop  disaster-recovery-as-a-service it-project-management it-project-implementation cloud it-systems-design financial-services">
+                    <a href="/case-study/customer-story-ausbil">
+                        <img title="Customer Story: Ausbil" alt="Customer Story: Ausbil"
+                            src="/img/huon_clients_750x550px_0009_Austbil.jpg"
+                            class="img-responsive">
+                    </a>
+                </div>
+                <div
+                    class="casestudyloop  24x7-help-desk it-project-management it-project-implementation cio-as-a-service secure-networking legal">
+                    <a href="/case-study/customer-story-marsdens-law-group">
+                        <img title="Customer Story: Marsdens Law Group" alt="Customer Story: Marsdens Law Group"
+                            src="/img/huon_clients_750x550px_0005_Marsdens.jpg"
+                            class="img-responsive">
+                    </a>
+                </div>
+                <div class="casestudyloop  it-project-management it-project-implementation it-systems-design aged-care">
+                    <a href="/case-study/customer-story-rsl-lifecare">
+                        <img title="Customer Story: RSL Lifecare" alt="Customer Story: RSL Lifecare"
+                            src="/img/huon_clients_750x550px_0007_RSL.jpg"
+                            class="img-responsive">
+                    </a>
+                </div>
+                <div class="casestudyloop  disaster-recovery-as-a-service financial-services">
+                    <a href="/case-study/customer-story-mortgage-choice">
+                        <img title="Customer Story: Mortgage Choice" alt="Customer Story: Mortgage Choice"
+                            src="/img/huon_clients_750x550px-mortgagechoice.jpg"
+                            class="img-responsive">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+  
+    <script src=" /js/609f13f24b22bae4802357d7ca56c4ef-1510181834.js"></script>
+
+    <script type="text/javascript">
+        _linkedin_partner_id = "362852";
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script>
+    <script type="text/javascript">
+        (function () {
+            var s = document.getElementsByTagName("script")[0];
+            var b = document.createElement("script");
+            b.type = "text/javascript";
+            b.async = true;
+            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+            s.parentNode.insertBefore(b, s);
+        })();
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none;" alt=""
+            src="https://dc.ads.linkedin.com/collect/?pid=362852&fmt=gif" />
+    </noscript>
+    <script>
+        function chooseData(optval) {
+            if (optval == 'industry_option' && $('#industry_option').val() != "")
+                $('#services_option').val('');
+
+            if (optval == 'services_option' && $('#services_option').val() != "")
+                $('#industry_option').val('');
+
+            var industry = $('#industry_option').val();
+            var service = $('#services_option').val();
+
+
+
+            if (industry == "" && service == "") {
+                $('.casestudyloop').show();
+            }
+
+            if (industry != "" || service != "") {
+                $('.casestudyloop').hide();
+
+                $('.casestudyloop').each(function () {
+                    var classStr = $(this).attr("class");
+
+                    var industryflag = classStr.includes(industry);
+                    var serviceflag = classStr.includes(service);
+
+                    if (industry != "" && service != "") {
+                        if (industryflag == true && serviceflag == true) {
+                            $(this).show();
+                        }
+                    } else if (industry != "") {
+                        if (industryflag == true) {
+                            $(this).show();
+                        }
+                    } else if (service != "") {
+                        if (serviceflag == true) {
+                            $(this).show();
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+
+</div>
