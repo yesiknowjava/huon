@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+{{ partial "head.html" .}}
+
+<body class="page-blog-blog layout-default" ng-app="">
+
+    <!-- Header -->
+    {{partial "header.html" .}}
+
+
+
+
+    <!-- Content -->
+    <div id="layout-content">
+        <!--<section id="layout-title">
+    <div class="container">
+        <h3>Blog</h3>
+    </div>
+</section>-->
+        <div class="breadcrumbDiv">
+            <div class="container">
+                <div class="innerContainer">
+                    <ol class="breadcrumb">
+                        <li class=""><a href="/insights/blog">Insights</a></li>
+                        <li class=""><a href="/blog">News & Blog</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="blogPage">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+
+
+                        <!-- <ul class="post-list">
+        
+        <li>
+            <h3><a href="/blog/post/cybersecurity-newsletter-june-2020">Cybersecurity Newsletter June 2020</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>                                on Jun 26, 2020
+            </p>
+
+            <p class="excerpt">Welcome to the June edition of Huon IT's Cybersecurity Update.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/cyber-attack-warning">Prime Minister Announced Large-Scale Cyber-Attack Warning</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>                                on Jun 24, 2020
+            </p>
+
+            <p class="excerpt">Australia’s Prime Minister announced that Australia was being hit with a massive cyber attack. Read the recommendations for Australian businesses.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/how-select-right-password-manager-your-business">How to Select the Right Password Manager for Your Business</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>                                on Jun 22, 2020
+            </p>
+
+            <p class="excerpt">Password breaches are becoming increasingly common and learning how to protect online accounts is more important than ever.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/definitive-guide-remote-working-australia">The Definitive Guide to Remote Working in Australia</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>,                                     <a href="/blog/category/managed-services">Managed Services</a>,                                     <a href="/blog/category/cloud">Cloud</a>,                                     <a href="/blog/category/connectivity-collaboration">Connectivity &amp; Collaboration</a>,                                     <a href="/blog/category/print-document-solutions">Print &amp; Document Solutions</a>                                on May 08, 2020
+            </p>
+
+            <p class="excerpt">Remote working is testing the digital maturity of businesses across Australia. Download Remote Working: The Definitive Guide for Businesses & Employees to better understand the best practices.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/benefits-electronic-signatures">Key Benefits of Electronic Signatures for Your Remote Workforce</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/general-updates">General Updates</a>,                                     <a href="/blog/category/print-document-solutions">Print &amp; Document Solutions</a>                                on Apr 17, 2020
+            </p>
+
+            <p class="excerpt">While many organisations have eased into remote working, there are still a number of businesses using processes that have manual, printed, or face-to-face components. Find out the key benefits of electronic signatures for your remote workforce.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/how-transform-paper-based-processes-online-workflows">How to Transform Paper-Based Processes into Online Workflows</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/software-development">Software Development</a>,                                     <a href="/blog/category/connectivity-collaboration">Connectivity &amp; Collaboration</a>,                                     <a href="/blog/category/print-document-solutions">Print &amp; Document Solutions</a>                                on Apr 14, 2020
+            </p>
+
+            <p class="excerpt">Many employees working remotely are now facing practical challenges in regards to paper-based processes. Read how Huon IT can help.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/top-5-tools-dynamic-remote-workforce">Top 5 Tools for a Dynamic Remote Workforce</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/cloud">Cloud</a>,                                     <a href="/blog/category/connectivity-collaboration">Connectivity &amp; Collaboration</a>                                on Apr 01, 2020
+            </p>
+
+            <p class="excerpt">With most of us now working from home, Huon IT has gained many insights into how the right IT tools can ensure teams are empowered, engaged and effective. This post explores our top 5 tools for remote working.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/how-has-your-business-responded-working-remotely-during-covid-19">How Has Your Business Responded to Working Remotely During COVID-19?</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/general-updates">General Updates</a>,                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>,                                     <a href="/blog/category/connectivity-collaboration">Connectivity &amp; Collaboration</a>                                on Mar 25, 2020
+            </p>
+
+            <p class="excerpt">COVID-19 continues to be a major challenge for businesses around the world. An optimum IT resilience plan is critical in assisting staff to work remotely.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/cybersecurity-newsletter-january-2020">Cybersecurity Newsletter January 2020</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>                                on Feb 05, 2020
+            </p>
+
+            <p class="excerpt">Welcome to the January edition of Huon IT's Cybersecurity Update.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/huon-it-ranked-top-10-msp50-awards">Huon IT Ranked Top 10 in Australian MSP50 Awards</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/managed-services">Managed Services</a>                                on Jan 17, 2020
+            </p>
+
+            <p class="excerpt">The MSP50 Awards in Australia were announced this week and Huon IT is proud to have ranked within the Top 10 list of MSPs.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/how-identify-scam-email">IT Security: How to Identify a Scam Email</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>                                on Oct 17, 2019
+            </p>
+
+            <p class="excerpt">There are some simple tips every business can follow to help reduce the risk of being impacted by email scams. This post explores our top 10 tips for identifying a scam email.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/kyocera-acquires-huon-it">Huon IT is now a KYOCERA Group Company</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/general-updates">General Updates</a>                                on Jul 03, 2019
+            </p>
+
+            <p class="excerpt">Huon IT is proud to announce that as of 1st July 2019, we are now a KYOCERA Group Company; wholly owned by Kyocera Document Solutions Inc (Japan).</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/5-reasons-get-independent-it-health-check">5 Reasons to Get an Independent IT Health Check</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/general-updates">General Updates</a>,                                     <a href="/blog/category/strategy">Strategy</a>                                on May 27, 2019
+            </p>
+
+            <p class="excerpt">The aim of an IT Health Check is to provide a high-level analysis of all IT functions within an organisation including an assessment of the current strengths and weaknesses.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/managed-services-provider-checklist">Managed Services Provider Checklist</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/managed-services">Managed Services</a>                                on Apr 03, 2019
+            </p>
+
+            <p class="excerpt">Choosing the right Managed Services Provider is an enormous decision for your company. Here we outline 12 critical questions you should ask a potential MSP.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/technology-innovation-aged-care">Technology Innovation in Aged Care</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/software-development">Software Development</a>,                                     <a href="/blog/category/managed-services">Managed Services</a>,                                     <a href="/blog/category/project-services">Project Services</a>                                on Nov 19, 2018
+            </p>
+
+            <p class="excerpt">Q&A with Huon IT's CEO, Damian Huon regarding the role of technology innovation in the aged care sector. Damian discusses the main challenges for the aged care sector and why business intelligence is so crucial in this industry.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/power-bi-dashboards-benefits">Five Ways Power BI Dashboards Can Benefit Your Organisation</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/software-development">Software Development</a>                                on Oct 31, 2018
+            </p>
+
+            <p class="excerpt">When you operate a business, efficiency is everything. Crucial to this is accessing organizational insights to help you make more timely and accurate decisions.
+This post explores five ways that a quality power BI dashboard can benefit your organization.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/penetration-testing">What Is Penetration Testing and Why Is It Important?</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>                                on Oct 22, 2018
+            </p>
+
+            <p class="excerpt">How effective is your current security system against a real-world targeted attack? It’s no longer enough to put security tools into place and hope for the best. One of the most important tools that companies can use to defend themselves from cyber attacks is that of penetration testing.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/phishing-scams-spear-phishing-vs-whaling">Phishing Scams: Spear Phishing vs Whaling</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>                                on Sep 27, 2018
+            </p>
+
+            <p class="excerpt">Phishing scams are the most common scam impacting Australians. Australians lost more money to scammers in 2017 than in any other year since reporting began by the ACCC. In this post, we’ll look at the difference between two common phishing scams: spear phishing and whaling.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/8-key-benefits-outsourcing-it-services">8 Key Benefits to Outsourcing Your IT Services</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/managed-services">Managed Services</a>,                                     <a href="/blog/category/project-services">Project Services</a>                                on Aug 29, 2018
+            </p>
+
+            <p class="excerpt">Many fast-growing businesses are outsourcing their IT services to improve company focus and reduce the strain on internal IT resources. There are many benefits to partnering with a Managed IT Services provider (MSP). This post explores the top eight key benefits.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/huon-it-welcomes-cohesity">New Partner: Huon IT Welcomes Cohesity</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/general-updates">General Updates</a>                                on Jun 24, 2018
+            </p>
+
+            <p class="excerpt">Huon IT is excited to announce it's partnership with Cohesity, leaders in delivering efficiencies and cost-savings to business by consolidating their secondary storage environment with a focus on data mobility into the cloud.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/huon-it-nutanix-partnership">Huon IT Announces Nutanix Partnership</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/general-updates">General Updates</a>,                                     <a href="/blog/category/cloud">Cloud</a>                                on Jun 24, 2018
+            </p>
+
+            <p class="excerpt">Huon IT welcomes Nutanix as a partner. Nutanix offers an innovative approach to IT infrastructure using a hyper-converged platform and solutions that are 100% software based.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/cybersecurity-awareness-training">Three Reasons Why Cybersecurity Awareness Training is Important to Your Business</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>                                on Jun 05, 2018
+            </p>
+
+            <p class="excerpt">Your employees are frequently exposed to sophisticated phishing and ransomware attacks. Cybersecurity is no longer the sole responsibility of your IT department. It’s everyone’s business. </p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/webroots-2018-threat-report">6 Key Insights From Webroot&#039;s 2018 Threat Report</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>                                on May 02, 2018
+            </p>
+
+            <p class="excerpt">Webroot recently revealed the results from their 2018 edition of its annual threat report. Outlined in this post are six key insights from their report.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/imanage-work-10">7 Reasons Why You Should Upgrade to iManage Work 10</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/general-updates">General Updates</a>,                                     <a href="/blog/category/cloud">Cloud</a>,                                     <a href="/blog/category/connectivity-collaboration">Connectivity &amp; Collaboration</a>                                on Apr 30, 2018
+            </p>
+
+            <p class="excerpt">Huon IT recently upgraded to the latest and greatest iManage Work 10. Many clients are wondering what the benefits are (apart from the hidden backend benefits) to upgrading? Outlined in this post are seven reasons why your business should upgrade to iManage Work 10.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/christmas-giving-tree-how-small-gift-can-change-childs-life-better">Christmas Giving Tree</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/general-updates">General Updates</a>                                on Dec 22, 2017
+            </p>
+
+            <p class="excerpt">For Christmas, Stewart House, house over 90 kids of all ages and have a Christmas "Giving Tree" where people from the community donate gifts for children who are from disadvantaged backgrounds. This December, the Huon IT team donated a variety of gifts to make Christmas a little brighter for children who are struggling in the community.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/effective-cybersecurity-leader">An Effective Cybersecurity Leader</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/strategy">Strategy</a>,                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>                                on Dec 20, 2017
+            </p>
+
+            <p class="excerpt">With Cyber-attacks and vulnerability admissions flooding our media channels weekly, Cyber-resiliency has well and truly transformed how every individual and organisation works. This isn’t new news, although it raises the question - are you confident that you’re being an effective Cybersecurity Leader?  </p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/australias-data-breach-notification-laws">Australia&#039;s Data Breach Laws</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/general-updates">General Updates</a>,                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>                                on Dec 06, 2017
+            </p>
+
+            <p class="excerpt">According to the passage of the Privacy Amendment (Notifiable Data Breaches) Act 2017, on the 23rd of February any eligible data breaches will need to be reported to the Office of the Australian Information Commissioner and individuals effected.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/5-hot-tips-for-microsoft-teams">5 Hot Tips for Microsoft Teams</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/general-updates">General Updates</a>,                                     <a href="/blog/category/strategy">Strategy</a>,                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>,                                     <a href="/blog/category/managed-services">Managed Services</a>                                on Sep 10, 2017
+            </p>
+
+            <p class="excerpt">Work less, do more. With so many questions around Microsoft’s 2016 product - Teams, we thought it would be relevant to share our thoughts on the top 5 tips for Teams! What is Microsoft Teams?
+A market leading collaboration app, Microsoft Teams is designed specifically for the modern workplace.</p>
+        </li>
+        
+        <li>
+            <h3><a href="/blog/post/top5-it-trends-in-aussie-business">Top 5 IT Trends in Aussie Business</a></h3>
+
+            <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/strategy">Strategy</a>,                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>,                                     <a href="/blog/category/software-development">Software Development</a>                                on Jul 01, 2017
+            </p>
+
+            <p class="excerpt">As we kick off the new financial year, it’s always a good time to take stock of the IT priorities set to dominate the year ahead. Based on discussions we’ve been having with our own clients across Australia, we’d thought we’d share the top five IT trends we’re seeing for 2017-18 FY. How does your organisation’s IT strategy stack up?</p>
+        </li>
+    </ul> -->
+
+
+                        <div class="row">
+                            {{ range where .Paginator.Pages "Section" "blog" }}
+                            <div class="col-md-4 PostListing">
+                                <div class="featured-images text-center">
+                                    <a href="/blog/post/cybersecurity-newsletter-june-2020">
+                                        <img data-src="huonit-blog-cyber-newsletter-jun2020.png"
+                                            src="{{"/img/5ef56892d2ca9774962574.png" | relURL }}"
+                                            alt="" style="max-width: 100%" />
+                                    </a>
+                                </div>
+                                <h3><a href="/blog/post/cybersecurity-newsletter-june-2020">Cybersecurity
+                                        Newsletter June 2020</a></h3>
+
+                                <!-- <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>                                on Jun 26, 2020
+            </p> -->
+                                <div class="postDate">
+                                    <i class="icon-calendar3"></i>&nbsp;&nbsp;Jun 26, 2020
+                                </div>
+                                <p class="excerpt">Welcome to the June edition of Huon IT's Cybersecurity Update.</p>
+                                <div class="readMore"><a href="/blog/post/cybersecurity-newsletter-june-2020">Read
+                                        More</a></div>
+                            </div>
+                            {{ end }}
+                        </div>
+                          
+        <!-- Footer -->
+        {{ partial "footer.html" .}}
+
+        <script src="{{"/js/609f13f24b22bae4802357d7ca56c4ef-1510181834.js" | relURL }}"></script>
+
+        <script type="text/javascript">
+            _linkedin_partner_id = "362852";
+            window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+            window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+        </script>
+        <script type="text/javascript">
+            (function () {
+                var s = document.getElementsByTagName("script")[0];
+                var b = document.createElement("script");
+                b.type = "text/javascript";
+                b.async = true;
+                b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+                s.parentNode.insertBefore(b, s);
+            })();
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none;" alt=""
+                src="https://dc.ads.linkedin.com/collect/?pid=362852&fmt=gif" />
+        </noscript>
+        <script src="{{"/js/framework.js" | relURL }}"></script>
+        <script src="{{"/js/framework.extras.js" | relURL }}"></script>
+        <link rel="stylesheet" property="stylesheet" href="{{"/css/framework.extras.css" | relURL}}">
+
+
+</body>
+
+</html>
