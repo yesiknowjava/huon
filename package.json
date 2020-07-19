@@ -1,0 +1,28 @@
+{
+  "name": "huonit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yesiknowjava/huon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yesiknowjava/huon/issues"
+  },
+  "homepage": "https://github.com/yesiknowjava/huon#readme",
+  "devDependencies": {
+    "grunt": "^1.2.1"
+  },
+  "dependencies": {
+    "grunt-contrib-imagemin": "^4.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "string": "^3.3.3",
+    "toml": "^3.0.0"
+  }
+}

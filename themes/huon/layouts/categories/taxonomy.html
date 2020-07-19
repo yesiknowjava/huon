@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+{{ partial "head.html" .}}
+
+<body class="page-blog-blog layout-default" ng-app="">
+
+    <!-- Header -->
+    {{partial "header.html" .}}
+
+
+
+
+    <!-- Content -->
+    <div id="layout-content">
+        <!--<section id="layout-title">
+    <div class="container">
+        <h3>Blog</h3>
+    </div>
+</section>-->
+        <div class="breadcrumbDiv">
+            <div class="container">
+                <div class="innerContainer">
+                    <ol class="breadcrumb">
+                        <li class=""><a href="/insights/blog">Insights</a></li>
+                        <li class=""><a href="/blog">News & Blog</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="blogPage">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+
+
+                        <div class="row">
+                            {{ range .Paginator.Pages }}
+                            
+                            <div class="col-md-4 PostListing">
+                                <div class="featured-images text-center">
+                                    <a href="{{ .Permalink }}">
+                                        <img data-src="{{ .Params.featured_image | relURL }}"
+                                            src="{{ .Params.featured_image | relURL}}"
+                                            alt="" style="max-width: 100%" />
+                                    </a>
+                                </div>
+                                <h3><a href="{{ .Permalink }}">{{ .Params.Title }}</a></h3>
+
+                                <!-- <p class="info">
+                Posted
+                 in                                     <a href="/blog/category/security-networking">Security &amp; Networking</a>                                on Jun 26, 2020
+            </p> -->
+                                <div class="postDate">
+                                    <i class="icon-calendar3"></i>&nbsp;&nbsp;{{ .Params.Date.Format "02 Jan, 2006" }}
+                                </div>
+                                <p class="excerpt">{{ .Params.featured_content}}</p>
+                                <div class="readMore"><a href="{{ .Permalink }}">Read
+                                        More</a></div>
+                            </div>
+                            {{ end }}
+                        </div>
+
+
+                        
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        {{ partial "footer.html" .}}
+
+        <script src="{{"/js/609f13f24b22bae4802357d7ca56c4ef-1510181834.js" | relURL }}"></script>
+
+        <script type="text/javascript">
+            _linkedin_partner_id = "362852";
+            window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+            window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+        </script>
+        <script type="text/javascript">
+            (function () {
+                var s = document.getElementsByTagName("script")[0];
+                var b = document.createElement("script");
+                b.type = "text/javascript";
+                b.async = true;
+                b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+                s.parentNode.insertBefore(b, s);
+            })();
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none;" alt=""
+                src="https://dc.ads.linkedin.com/collect/?pid=362852&fmt=gif" />
+        </noscript>
+        <script src="{{"/js/framework.js" | relURL }}"></script>
+        <script src="{{"/js/framework.extras.js" | relURL }}"></script>
+        <link rel="stylesheet" property="stylesheet" href="{{"/css/framework.extras.css" | relURL}}">
+
+
+</body>
+
+</html>

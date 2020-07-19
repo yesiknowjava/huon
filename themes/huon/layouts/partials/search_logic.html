@@ -1,0 +1,122 @@
+<script type="text/javascript" src="{{ "/js/vendor/lunr.js" | relURL }}"></script>
+
+
+
+<script>
+
+
+    let lunrIndex,
+      $searchResults,
+      pagesIndex;
+
+
+    function initLunr() {
+
+      
+
+      var request = new XMLHttpRequest();
+      request.open('GET', '/js/lunr/PagesIndex.json', true);
+
+      request.onload = function () {
+        if (request.status >= 200 && request.status < 400) {
+          // Success!
+          pagesIndex = index = JSON.parse(request.responseText);
+          console.log(pagesIndex)
+          lunrIndex = lunr(function () {
+            this.field("title", {
+              boost: 10
+            });
+            this.field("tags", {
+              boost: 5
+            });
+            this.field("content");
+            this.ref("href");
+            pagesIndex.forEach((page) => {
+              this.add(page);
+            });
+          });
+
+          initUI();
+        } else {
+          console.error("We reached our target server, but it returned an error")
+        }
+      };
+
+      request.onerror = function () {
+        console.error("There was a connection error of some sort")
+      };
+
+      request.send();
+    }
+
+    initLunr();
+
+    function search(query) {
+      query = query.trim().toLowerCase();
+
+
+      const terms = query.split(' ');
+      let res1 = lunrIndex.search(query).filter((result) => Object.keys(result.matchData.metadata).length ==
+        terms.length).map(
+        (result) => pagesIndex.filter(page => page.href === result.ref)[0]);
+
+      console.log(res1)
+
+      return res1;
+
+      // return lunrIndex.search(query)
+      //     .map(
+      //         (result) => pagesIndex.filter(page => page.href === result.ref)[0]
+      //     );
+    }
+
+    function renderResults(results) {
+      if (!results.length) {
+        return;
+      }
+
+      $searchResults.innerHTML = '';
+
+      results.forEach(function (result) {
+        let $searchResultsItem = document.createElement("div", 'search-results__item');
+
+        let slicedContent = result && result.content && result.content.slice(0, 350);
+        let title = result.title.replace(/-/g, " ")
+        $searchResultsItem.innerHTML =
+          `
+                
+
+                <div class="ss-result">
+                  <div class="ss-result__content">
+                      <h4 class="ss-result__title">
+                          <a href="${result.href}"><mark>${title}</mark></a>
+                          
+
+                      </h4>
+
+                      <p class="ss-result__text">
+                        ${slicedContent}${slicedContent.length === 350 && '...' || ''}
+                      </p>
+
+                      <p class="ss-result__url">
+                          <a href="${result.href}"
+                              class="ss-result__link">Visit page →</a>
+                      </p>
+                  </div>
+                  <hr>
+              </div>
+            `
+        $searchResults.appendChild($searchResultsItem)
+
+      });
+    }
+
+    function initUI() {
+
+      $searchResults = document.querySelector(".search-results");
+      $searchResults.innerHTML = '';
+      renderResults(
+        search(keyword)
+      );
+    }
+  </script>

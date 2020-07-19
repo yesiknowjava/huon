@@ -1,0 +1,5 @@
+<p class="info BlogDetailCategory">
+    {{ range .Params.categories }}
+        <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}/" class="link-btn btn btn-default">{{ . | humanize }}</a>
+    {{ end }}
+</p>

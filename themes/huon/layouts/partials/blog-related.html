@@ -1,60 +1,33 @@
 <div class="RelatedPostSection">
+    {{ if .Params.Related }}
     <h3>Related posts:</h3>
+    {{ end }}
     <div class="row">
+        {{ $site := .Site.BaseURL }}
+        
+       
+
+        {{ range .Params.Related }}
+        {{ $link := index . 0 }}
+        {{ $text := index . 1 }}
+        {{ $image := index . 2 }}
         <div class="col-md-6">
             <div class="row">
                 <div class="col-md-5">
                     <img data-src="blog_cio_advisor_article_purple_security.jpg"
-                        src="{{"/img/5a3aeb2e7ed47086546849.jpg" | relURL }}"
+                        src="{{ $image | relURL }}"
                         alt="" style="max-width: 100%">
                 </div>
                 <div class="col-md-7">
-                    <a href="/blog/post/effective-cybersecurity-leader">An Effective
-                        Cybersecurity Leader</a>
-
+                    <a href="{{ $site }}/blog/post/{{ $link }}">{{ $text }}</a>
                     <p class="info PostDate">
-                        <i class="icon-calendar3"></i> 20 Dec, 2017
+                        <!-- <i class="icon-calendar3"></i>  -->
                     </p>
                 </div>
                 <div class="clearfix"></div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-5">
-                    <img data-src="blog_australiandatabreachnotificationlaws_orangelightbulb.jpg"
-                        src="{{"/img/5a5d65e1b174a202909355.jpg" | relURL }}"
-                        alt="" style="max-width: 100%">
-                </div>
-                <div class="col-md-7">
-                    <a href="/blog/post/australias-data-breach-notification-laws">Australia's
-                        Data Breach Laws</a>
-
-                    <p class="info PostDate">
-                        <i class="icon-calendar3"></i> 06 Dec, 2017
-                    </p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-5">
-                    <img data-src="blog_it_trends.jpg"
-                        src="{{"/img/595ed92b877e6558132702.jpg" | relURL }}"
-                        alt="" style="max-width: 100%">
-                </div>
-                <div class="col-md-7">
-                    <a href="/blog/post/top5-it-trends-in-aussie-business">Top 5 IT Trends in
-                        Aussie Business</a>
-
-                    <p class="info PostDate">
-                        <i class="icon-calendar3"></i> 01 Jul, 2017
-                    </p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
+        {{ end }}
     </div>
 
 

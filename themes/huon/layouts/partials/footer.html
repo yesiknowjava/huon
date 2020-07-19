@@ -75,43 +75,21 @@
                     </div>
                     <div class="col-md-3 columnThree">
                         <h3>Latest Posts</h3>
+                        {{ range ( first 3 ( where .Site.Pages "Type" "blog" ).ByDate ) }}
                         <div class="news-container">
                             <div class="module-news">
                                 <div class="news">
-                                    <a href="/blog/post/cyber-attack-warning">Prime
-                                        Minister Announced Large-Scale Cyber-Attack Warning</a>.
+                                    <a href="{{ .Permalink }}">{{ .Params.Title }}</a>.
                                     <!--<p>Australia’s Prime Minister announced that Australia was being hit with a massive cyber attack. Read the recommendations for Australian businesses.</p>-->
                                 </div>
                                 <div class="calendar">
-                                    <span class="month">24th June 2020</span>
+                                    <span class="month">{{ .Params.Date.Format "02th January 2006" }}</span>
                                 </div>
 
                             </div>
-                            <div class="module-news">
-                                <div class="news">
-                                    <a
-                                        href="/blog/post/how-select-right-password-manager-your-business">How
-                                        to Select the Right Password Manager for Your Business</a>.
-                                    <!--<p>Password breaches are becoming increasingly common and learning how to protect online accounts is more important than ever.</p>-->
-                                </div>
-                                <div class="calendar">
-                                    <span class="month">22nd June 2020</span>
-                                </div>
-
-                            </div>
-                            <div class="module-news">
-                                <div class="news">
-                                    <a
-                                        href="/blog/post/definitive-guide-remote-working-australia">The
-                                        Definitive Guide to Remote Working in Australia</a>.
-                                    <!--<p>Remote working is testing the digital maturity of businesses across Australia. Download Remote Working: The Definitive Guide for Businesses &amp; Employees to better understand the best practices.</p>-->
-                                </div>
-                                <div class="calendar">
-                                    <span class="month">8th May 2020</span>
-                                </div>
-
-                            </div>
+                            
                         </div>
+                        {{ end }}
                     </div>
                     <div class="col-md-4 columnFour PadRightNone">
                         <div class="row">

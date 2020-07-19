@@ -17,13 +17,15 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-9">
-                        
+                    <div class="col-sm-9">                        
                         {{ .Content }}
+                        {{ partial "blog-category-list.html" . }}
                         {{ partial "blog-sharing.html" . }}
+
+                        
+                        
                         {{ partial "blog-related.html" . }}
                     </div>
-
                     {{ partial "blog-sidebar.html" . }}
                     
                 </div>

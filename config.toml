@@ -3,3 +3,26 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 theme  = "huon"
 paginate = 1000
+
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+[related]
+    treshold = 1
+    includeNewer = true
+    toLower = false
+
+    [[related.indices]]
+        name = "CurrentSection.Title"
+        weight = 75
+        toLower = true
+    [[related.indices]]
+        name = "Section.Title"
+        weight = 50
+        toLower = true
+    [[related.indices]]
+        name = "description"
+        weight = 25
+        toLower = true
