@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/yesiknowjava/huon#readme",
   "devDependencies": {
-    "grunt": "^1.2.1"
+    "grunt": "^1.5.2"
   },
   "dependencies": {
     "grunt-contrib-imagemin": "^4.0.0",
